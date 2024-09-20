@@ -13,7 +13,7 @@
     --color-pink-200: #f8a0d0;
     --color-pink-300: #f471b5;
     --color-pink-400: #ec4699;
-    --color-pink-500: #da2576;
+    --color-pink-500: #13334C;
     --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -183,9 +183,7 @@ a, button {
         color: white;
         font-size: 18px;
    }
-   #order-link{
-
-   }
+  
    .navbar{
     background-color: #13334D;
    }
@@ -210,7 +208,7 @@ a, button {
     visibility: hidden;
     transform: translateY(1rem);
     border-radius: 0 0 0.25rem 0.25rem;
-    border-top: 2px solid var(--color-pink-400);
+    border-top: 2px solid var(--color-pink-500);
     box-shadow: var(--shadow-medium);
     background-color: var(--color-white-100);
     transition: all 0.3s ease-in-out;
