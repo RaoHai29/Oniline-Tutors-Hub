@@ -1,0 +1,165 @@
+.about{
+    width: 100%;
+    height: auto;
+}
+.about .banner{
+    width: 100%;
+    margin-top: 50px;
+    height: 50vh;
+    background: url(./images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .banner .ban-col{
+    width: 100%;
+    height: 50vh;
+    background-color: #13334dbd;
+   
+}
+.about .banner .ban-col h1{
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 84px;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.about-detail{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding: 40px 140px;
+}
+.about-detail .ab-des{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+}
+.about-detail .ab-des .ab-left{
+    width: 100%;
+    flex: 1;
+}
+.about-detail .ab-des .ab-right{
+    width: 100%;
+    flex: 1;
+}
+
+
+
+#image-slider {
+    width: 650px;
+    height: 380px;
+    border: 3px solid #13334d ;
+    border-radius: 12px;
+}
+
+.about-detail .ab-des .ab-left h1{
+    font-size: 32px;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #13334d;
+}
+.about-detail .ab-des .ab-left p{
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+.mission{
+    width: 100%;
+    padding: 10px 140px;
+    height: auto;
+}
+.mission .mission-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.mission .mission-cards .m-cards{
+    width: 340px;
+    height: 410px;
+    margin: 20px;
+    border: 3px solid #13334d ;
+    background: white;
+    border-radius: 15px;
+}
+.mission h1{
+    text-align: center;
+    color: #13334d;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.mission .mission-cards .m-cards center img{
+    width: 100px;
+    margin-top: 10px;
+    border: 3px solid #13334d;
+    border-radius: 50%;
+}
+.mission .mission-cards .m-cards h3{
+    text-align: center;
+    color: #13334d;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+.mission .mission-cards .m-cards p{
+    text-align: justify;
+    padding: 2px 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 820px){
+    .about-detail{
+        padding: 40px 50px;
+    }
+    .about-detail .ab-des{
+        flex-direction: column;
+        height: 100vh;
+    }
+    #image-slider {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 420px){
+    .about-detail{
+        padding: 40px 10px;
+    }
+    .about-detail .ab-des{
+        flex-direction: column;
+        height: 120vh;
+    }
+    #image-slider {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 320px;
+        height: 200px;
+    }
+    .about .banner .ban-col h1 {
+        font-size: 68px;
+    }
+    .about-detail .ab-des .ab-left h1{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    .mission{
+        padding: 20px 5px;
+    }
+    .mission .mission-cards .m-cards{
+        height: 490px;
+    }
+}

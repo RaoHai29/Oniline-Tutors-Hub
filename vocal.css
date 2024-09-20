@@ -1,0 +1,168 @@
+.bachelors{
+    width: 100%;
+    height: auto;
+}
+.bachelors .banner{
+    width: 100%;
+    margin-top: 50px;
+    height: 50vh;
+    background: url(./images/voca.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bachelors .banner .ban-col{
+    width: 100%;
+    height: 50vh;
+    background-color: #13334dbd;
+   
+}
+.bachelors .banner .ban-col h1{
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 84px;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.bach-content{
+    width: 100%;
+    padding: 40px 140px;
+}
+.bach-content h1{
+    margin-top: 30px;
+    text-align: start;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 33px;
+    color: #13334d;
+}
+.bach-content p{
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-right:30px;
+    text-align: justify;
+}
+.bach-content .country{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.bach-content .country .left{
+    width: 100%;
+    flex: 1;
+}
+.bach-content .country .right{
+    width: 100%;
+    flex: 1;
+}
+.bach-content .country .left h1{
+    text-align: start;
+}
+.bach-content .country .left ul li{
+    text-align: justify;
+    width: 95%;
+}
+.bach-content .country .right img{
+    margin-top: 40px;
+    width: 600px;
+    border: 2px solid #13334D;
+}
+
+.bach-content .country-1{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction:row-reverse;
+}
+.bach-content .country-1 .left-1{
+    width: 100%;
+    flex: 1;
+}
+.bach-content .country-1 .right-1{
+    width: 100%;
+    flex: 1;
+}
+.bach-content .country-1 .left-1 h1{
+    text-align: left;
+}
+.bach-content .country-1 .left-1 ul li{
+    text-align: justify;
+    width: 95%;
+}
+.bach-content .country-1 .right-1 img{
+    margin-top: 40px;
+    width: 600px;
+    border: 2px solid #13334D;
+}
+@media (max-width:1200px) {
+    .bach-content{
+        padding: 40px 50px;
+    }
+    .bach-content .country-1 .right-1 img{
+        width: 500px;
+    }
+    .bach-content .country .right img{
+        width: 500px;
+    }
+}
+@media (max-width:820px) {
+    .bach-content{
+        padding: 40px 20px;
+    }
+    .bach-content .country{
+        flex-direction: column;
+    }
+    .bach-content .country-1 .right-1 img{
+        width: 700px;
+    }
+    .bach-content .country .right img{
+        width: 700px;
+    }
+    .bach-content .country-1{
+        flex-direction: column;
+    }
+    .bachelors .banner .ban-col h1{
+        font-size: 65px;
+    }
+}
+
+@media (max-width:420px) {
+    .bach-content{
+        padding: 40px 10px;
+    }
+    .bach-content .country{
+        flex-direction: column;
+    }
+    .bach-content .country-1 .right-1 img{
+        width: 330px;
+    }
+    .bach-content .country .right img{
+        width: 330px;
+    }
+    .bach-content .country-1{
+        flex-direction: column;
+    }
+    .bachelors .banner .ban-col h1{
+        font-size: 48px;
+    }
+    .bach-content h1{
+        font-size: 20px;
+    }
+    .bach-content p{
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    .bach-content .country-1 .left-1 ul li{
+        font-size: 15px;
+    }
+    .bach-content .country .left ul li{
+        font-size: 15px;
+    }
+}

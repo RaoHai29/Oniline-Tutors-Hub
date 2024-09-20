@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tutors Hub</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taprom&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Taprom&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Felipa&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Taprom&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="nav-con.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <section class="wrapper container">
+            <a href="./index.html" class="brand">
+                <img src="./images/OTH.png" alt="logo">
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <span class="overlay"></span>
+            <nav class="navbar" id="navbar">
+                <ul class="menu" id="menu">
+                    <li class="menu-item"><a href="./index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="./about.html" class="menu-link">About Us</a></li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">Services <i class="las la-angle-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="./Bacholers.html" class="submenu-link">Bacholers Courses</a></li>
+                            <li class="submenu-item"><a href="./Masters.html" class="submenu-link">Masters Courses</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Vocational Courses</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Diploma Courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="./Our-progress.html" class="menu-link">Reviews</a></li>
+                    <li class="menu-item"><a href="./Pricing.html" class="menu-link">Pricing</a></li>
+                    <li class="menu-item order"><a href="./Contact.html" class="menu-link" id="order-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="first-sect-left">
+                <h1>Leading Educational Services Worldwide: Expert Guidance and Personalized Tutoring</h1>
+                <br>
+                <p>For expert academic support and tutoring services, <strong>Online Tutors Hub</strong>
+                    connects students with experienced professionals. Whether you need guidance on
+                    complex subjects or personalized tutoring, Our platform provides high-quality
+                    educational support tailored to your needs.</p>
+                <p>Our services are designed to offer clarity and help students excel academically,
+                    with flexible options for online tutoring at competitive rates.</p><br>
+                <p>If you’re looking for tutoring assistance, simply fill out the order form on Our
+                    website, and you’ll be paired with a qualified tutor to guide you through your
+                    studies.</p>
+                <div class="offers">
+                    <ul>
+                        <li>✅ High-quality tutoring services</li>
+                        <li>✅ 100% satisfaction guarantee</li>
+                        <li>✅ 100% confidentiality </li>
+                    </ul>
+                    <ul>
+                        <li>✅ Live Support For Subjects</li>
+                        <li>✅ Tutoring on all referencing styles</li>
+                        <li>✅ AI & Plagiarism-free solutions </li>
+                    </ul>
+
+                </div>
+                <br>
+                <div class="form-container">
+                    <form id="orderForm" action="/submit" method="POST">
+                        <div id="f-1">
+                            <input type="text"
+                                placeholder="Name" name="name" required>
+                            <input type="email" placeholder="Email"
+                                name="email" required>
+                        </div>
+                        <div id="f-2">
+                            <input  id="phone" type="tel" name="phone" required>
+
+                            <select  id="subject"
+                                name="subject" required>
+                                <option value="" disabled selected>Select a Subject</option>
+                                <option value="accounting">Accounting</option>
+                                <option value="management">Management</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="nursing">Nursing</option>
+                                <option value="computer-science">Computer Science</option>
+                                <option value="Finance">Finance</option>
+                                <option value="economics">Economics</option>
+                                <option value="it-courses">IT Courses</option>
+                                <option value="law">Law</option>
+                                <option value="Statistics">Statistics</option>
+                                <option value="engineering">Engineering</option>
+                                <option value="others courses">Others Courses</option>
+                            </select>
+
+                        </div>
+                        <div style="margin-top: 10px;" id="checkbox-container">
+                            <input class="round-checkbox" type="checkbox" name="terms" id="terms" required>
+                            <label style="margin-left: 5px;" for="terms">I agree with the terms and conditions</label>
+                        </div>
+
+                        <button
+                            style=" margin-top:10px; padding:  12px 16px; background-color: #13334C; color: white; font-weight: 600;border-radius: 20px; "
+                            type="submit" class="order-btn">Order Now</button>
+                    </form>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="first-sect-right">
+                <img src="./images/oth-first-pic.jpg" alt="Student studying the book">
+            </div>
+
+        </section>
+    </main>
+    <section class="sec-section">
+        <div class="sec-main">
+            <h1>Why Choose <strong style="color: rgb(255, 0, 0);">Online Tutors Hub</strong> for Exceptional Learning
+                Support?</h1>
+            <p>Online Tutors Hub offers personalized tutoring services with expert guidance
+                across subjects. Our dedicated tutors help students worldwide excel in their
+                studies, <br>ensuring top-quality learning support for academic success.
+            </p>
+            <div class="img-service">
+                <div>
+                    <img src="./images/oth-support.png" alt="Support" class="clickable-img active"
+                        onclick="showContent('Support')" data-content="Support content goes here.">
+                </div>
+                <div>
+                    <img src="./images/oth-cert.png" alt="Certified Expert" class="clickable-img"
+                        onclick="showContent('Certified Expert')" data-content="Certified Expert content goes here.">
+                </div>
+                <div>
+                    <img src="./images/oth-expert.png" alt="Expert" class="clickable-img"
+                        onclick="showContent('Expert')" data-content="Expert content goes here.">
+                </div>
+                <div>
+                    <img src="./images/oth-reward.png" alt="Reward" class="clickable-img"
+                        onclick="showContent('Reward')" data-content="Reward content goes here.">
+                </div>
+                <div>
+                    <img src="./images/oth-par.png" alt="Plagiarism-free" class="clickable-img"
+                        onclick="showContent('Plagiarism-free')" data-content="Plagiarism-free content goes here.">
+                </div>
+            </div>
+
+            <div id="content-display" class="content-display">
+                <!-- Initially display content related to the first active image -->
+                <h1>Round-the-Clock Tutoring Support</h1>
+                <p>At Online Tutors Hub, we ensure that no stone is left unturned when it comes to providing the best
+                    tutoring and academic support. As your vigilant academic guides, our expert tutors are available
+                    around the clock to offer assistance and guidance at every stage of your learning journey. Whether
+                    you need help understanding complex concepts or personalized study support, we're here to support
+                    you every minute of the way.</p>
+            </div>
+
+
+        </div>
+    </section>
+    <!--------Counter up-------->
+    <section class="counter-section">
+        <div class="offer-h1">
+            <h1>SINCE 2019</h1>
+        </div>
+        <div id="counter">
+            <div class="item">
+                <img src="./images/st-oth.png" alt="enrolled">
+                <h1><span class="plus-count"><span class="count" data-number="7000"></span> +</span></h1>
+                <h1 class="text">Total Students Enrolled </h1>
+            </div>
+            <div class="item">
+                <img src="./images/uni-oth.png" alt="universities">
+                <h1><span class="plus-count"><span class="count" data-number="3375"></span> +</span></h1>
+                <h1 class="text">International Subject Catalog </h1>
+            </div>
+            <div class="item">
+                <img src="./images/cs-oth.png" alt="completed">
+                <h1><span class="plus-count"><span class="count" data-number="15000"></span> +</span></h1>
+                <h1 class="text">Tutoring Sessions Delivered </h1>
+            </div>
+        </div>
+    </section>
+    <section class="card-details">
+        <h1>Expert Tutoring Across a Wide Range of Subjects</h1><br>
+        <p>
+            Looking for guidance with your studies? Don’t worry! Get personalized support from our team of
+            subject-matter experts. Whether you're seeking help in math, science, literature, or any other subject, our
+            professional tutors are here to assist. Check out the list below to see how we can support your learning
+            journey.
+        </p>
+        <div class="cards">
+            <div class="cards-d">
+                <center><img src="./images/program.jpg" alt=""></center>
+                <h3>Computer Science Tutoring Help</h3>
+                <p>Struggling with complex coding, algorithms, or software development?
+                    Our expert computer science tutors provide personalized coaching,
+                    thorough code reviews, and clear explanations to ensure students
+                    master core concepts and excel in their studies.</p>
+            </div>
+            <div class="cards-d">
+                <center><img src="./images/accounting.jpg" alt=""></center>
+                <h3>Accounting Tutoring Help</h3>
+                <p>Our expert tutors specialize in helping students understand accounting principles, from financial
+                    accounts to complex calculations. With detailed explanations and structured solutions, we guide
+                    students through their accounting challenges to achieve success.</p>
+            </div>
+            <div class="cards-d">
+                <center><img src="./images/marketing.jpg" alt=""></center>
+                <h3>Marketing Tutoring Help</h3>
+                <p>Our marketing tutors offer expert guidance on topics like digital marketing, social media strategy,
+                    and market research. With in-depth analysis and industry insights, we provide students with
+                    comprehensive tutoring to support their marketing education.</p>
+            </div>
+            <div class="cards-d">
+                <center><img src="./images/economy.jpg" alt=""></center>
+                <h3>Economics Tutoring Help</h3>
+                <p>Our economics experts cover a wide range of topics, including microeconomics, macroeconomics, and
+                    econometrics. With clear explanations and well-structured tutoring, we ensure students understand
+                    complex economic theories and excel in their studies.</p>
+            </div>
+            <div class="cards-d">
+                <center><img src="./images/eng.jpg" alt=""></center>
+                <h3>Engineering Tutoring Help</h3>
+                <p>Our engineering tutors, specializing in civil, mechanical, electrical, and computer engineering,
+                    provide detailed tutoring support. From analysis to problem-solving, we help students master
+                    engineering principles and succeed in their assignments.</p>
+            </div>
+            <div class="cards-d">
+                <center><img src="./images/law.jpg" alt=""></center>
+                <h3>Law Tutoring Help</h3>
+                <p>Our law tutors cover subjects like criminal, contract, and constitutional law. With thorough legal
+                    research and clear tutoring, we ensure students understand key legal concepts and thrive in their
+                    studies.</p>
+            </div>
+            <div class="cards-d">
+                <center><img src="./images/manage.jpg" alt=""></center>
+                <h3>Management Tutoring Help</h3>
+                <p>Our experienced tutors provide top-notch support in management studies, offering strategic insights
+                    and comprehensive evaluations. We help students tackle complex management topics and achieve
+                    academic excellence.</p>
+            </div>
+            <div class="cards-d">
+                <center><img src="./images/nurse.jpg" alt=""></center>
+                <h3>Nursing Tutoring Help</h3>
+                <p>Our specialized nursing tutors assist with topics like patient care, healthcare ethics, and medical
+                    research. We provide well-researched content and detailed guidance to help students succeed in this
+                    vital healthcare field.</p>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </section>
+    <section class="faqs">
+        <h1>
+            Frequently Asked Questions About Learning Support
+        </h1>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="h4-faq faq-question">
+                    <h4>What subjects are you most comfortable tutoring?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>At Online Tutoring Hub, we specialize in a diverse range of subjects to accommodate the varied needs of our students. Our core subjects include mathematics, science, English, and social studies. We also offer tutoring for advanced subjects such as calculus, physics, chemistry, and literature analysis. Our expert tutors are trained to help students across all educational levels—from elementary school to college—ensuring that every student receives a personalized and effective learning experience tailored to their academic goals and learning style.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h4-faq faq-question">
+                    <h4>How do you assess a student’s current knowledge and skill level?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>At Online Tutoring Hub, we believe that effective tutoring begins with a thorough understanding of a student's current knowledge and skills. We use a variety of assessment tools, including diagnostic tests and personalized evaluations, to accurately gauge where a student stands. These assessments help us identify areas of strength and areas that require improvement. Based on these results, we create a customized learning plan that focuses on building foundational skills and addressing specific challenges, ensuring that each student progresses steadily.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h4-faq faq-question">
+                    <h4>What teaching methods do you use to keep students engaged?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Engagement is key to successful learning, which is why our tutors at Online Tutoring Hub use a variety of teaching methods designed to keep students actively involved. We incorporate interactive activities, such as quizzes, games, and hands-on exercises, to make learning fun and dynamic. Additionally, we use real-world examples to help students understand the practical applications of what they're learning. We also utilize cutting-edge technology tools, such as virtual whiteboards and interactive simulations, to make lessons visually stimulating and impactful.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h4-faq faq-question">
+                    <h4>How do you handle students with different learning styles?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>At Online Tutoring Hub, we recognize that every student learns differently, which is why we tailor our teaching approach to suit a variety of learning styles. Whether a student is a visual, auditory, or kinesthetic learner, we adjust our lessons to meet their needs. For example, visual learners benefit from diagrams and charts, while auditory learners may prefer verbal explanations and discussions. By using these diverse strategies, we ensure that each student grasps the material in a way that makes the most sense to them.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h4-faq faq-question">
+                    <h4>What strategies do you use to help students with learning difficulties?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Students with learning difficulties require a specialized approach to tutoring, and at Online Tutoring Hub, we employ various strategies to meet their unique needs. One key strategy is to break complex tasks into smaller, manageable steps, making learning less overwhelming. We also use multisensory approaches, such as combining visual, auditory, and hands-on learning methods, to engage different senses. Additionally, we offer extra time and support for students who need it, ensuring that they build confidence and achieve academic success at their own pace.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h4-faq faq-question">
+                    <h4>How do you measure and track student progress?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Monitoring progress is essential to ensuring long-term academic success, and at Online Tutoring Hub, we use a variety of methods to track how students are advancing. Regular assessments, quizzes, and feedback sessions allow us to gauge how well a student is mastering the material. We also provide detailed progress reports, which help both students and parents stay informed about the student's growth. By continuously tracking progress, we can adjust our teaching strategies as needed, making sure that each student remains on track to reach their goals.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h4-faq faq-question">
+                    <h4>What is your approach to online tutoring?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>At Online Tutoring Hub, our approach to online tutoring is designed to be as effective and interactive as in-person sessions. We use advanced online platforms equipped with tools like virtual whiteboards, screen sharing, and interactive exercises to create an immersive learning experience. Our tutors provide real-time feedback, ensuring that students receive immediate guidance on their work. By leveraging these technologies, we make sure that students can access high-quality tutoring from the comfort of their homes without compromising on personal attention or support.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h4-faq faq-question">
+                    <h4>How do you motivate students who are struggling or unmotivated?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Motivating students who are struggling or feeling unmotivated requires a combination of patience, encouragement, and goal-setting. At Online Tutoring Hub, we focus on positive reinforcement, celebrating small victories to help students build confidence. We also set achievable, short-term goals that give students a clear sense of accomplishment. Additionally, we connect the material to the student's personal interests or real-life scenarios, making learning more relatable and engaging. Our goal is to reignite their passion for learning and support them as they overcome academic challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="https://wa.me/9203706529746" target="_blank" style="position: fixed; bottom: 20px; right: 10px; z-index: 1000;">
+        <img src="./images/whatsapp.jpg" alt="WhatsApp" style="width: 65px; height: 65px; border-radius: 50%;">
+    </a>
+    
+
+    <section class="section-footer">
+        <div class="pg-footer">
+          <footer class="footer">
+            <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"
+              preserveAspectRatio="none">
+              <path class="footer-wave-path"
+                d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
+              </path>
+            </svg>
+            <div class="footer-content">
+              <div class="footer-content-column">
+                <div class="footer-logo">
+                  <a class="footer-logo-link" href="#">
+                    <img src="./images/OTH-footer.jpg" alt="logo" id="foot-logo">
+                  </a>
+                </div>
+                <div class="footer-menu">
+                  <p><i style="color: white; font-size:25px;" class="las la-envelope">Email</i><br>
+                    <a style="color: aliceblue;" href="mailto:umaimac59@gmail.com">umaimac59@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="footer-content-column">
+                <div class="footer-menu">
+                  <h2 class="footer-menu-name"> Company</h2>
+                  <ul id="menu-company" class="footer-menu-list">
+                    <li class=" menu-item-type-post_type menu-item-object-page">
+                      <a href="./index.html">Home</a>
+                    </li>
+                    <li class=" menu-item-type-taxonomy menu-item-object-category">
+                      <a href="./about.html">About</a>
+                    </li>
+                    <li class=" menu-item-type-post_type menu-item-object-page">
+                      <a href="./Contact.html">Pricing</a>
+                    </li>
+                  </ul>
+                </div>
+    
+              </div>
+              <div class="footer-content-column">
+                <div class="footer-menu">
+                  <h2 class="footer-menu-name"> Quick Links</h2>
+                  <ul id="menu-quick-links" class="footer-menu-list">
+                    <li class=" menu-item-type-custom menu-item-object-custom">
+                      <a target="_blank" rel="noopener noreferrer" href="./Bacholers.html">Bacholers Courses</a>
+                    </li>
+                    <li class=" menu-item-type-custom menu-item-object-custom">
+                      <a target="_blank" rel="noopener noreferrer" href="./Masters.html">Masters Courses</a>
+                    </li>
+                    <li class=" menu-item-type-post_type menu-item-object-page">
+                      <a href="#">Vocational and others Certificates</a>
+                    </li>
+                    <li class=" menu-item-type-post_type menu-item-object-page">
+                      <a href="review.html">Reviews</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-content-column">
+                <div class="footer-call-to-action">
+                  <h2 class="footer-call-to-action-title"> Let's Chat</h2>
+                  <p class="footer-call-to-action-description"> Have a support question?</p>
+                  <a class="footer-call-to-action-button button" href="https://wa.me/9203706529746" target="_self" id="foot-wt-btn"> Get in
+                    Touch</a>
+                </div>
+                <div class="footer-call-to-action">
+                  <h2 class="footer-call-to-action-title"><i style="font-size: 20px; color:white;" class="las la-phone"></i>
+                    You Call Us</h2>
+                  <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                      href="tel:+923187104236" target="_self"> +92 318-7104236 </a></p>
+                      <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                        href="tel:+923706529746" target="_self"> +92 370-6529746 </a></p>
+                </div>
+              </div>
+              <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 236 54">
+                  <path class="footer-social-amoeba-path"
+                    d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z">
+                  </path>
+                </svg>
+                <a class="footer-social-link linkedin" href="https://www.facebook.com/MohammadCreativeWriter12?mibextid=ZbWKwL"
+                  target="_blank">
+                  <i style="font-size: 30px; color:#123049;" class="lab la-facebook"></i>
+                </a>
+                <a class="footer-social-link twitter" href="#" target="_blank">
+                  <i style="font-size: 30px; color:#123049;" class="lab la-twitter"></i>
+                </a>
+                <a class="footer-social-link youtube"
+                  href="https://www.youtube.com/@onlineearning9186" target="_blank">
+                  <i style="font-size: 30px; color:#123049;" class="lab la-youtube"></i>
+                </a>
+    
+                <a class="footer-social-link github" href="#" target="_blank">
+                  <i style="font-size: 30px; color:#123049;" class="lab la-linkedin"></i>
+                </a>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="footer-copyright-wrapper">
+                <p class="footer-copyright-text">
+                  <a class="footer-copyright-link" href="https://www.linkedin.com/in/rao-abdul-hai-87aa9b1b4/" target="_self"> ©2019-2024. | Online Tutors Hub| Developed by Rao Abdul Hai | All
+                    rights reserved. </a>
+                </p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+    <script src="nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="numbercode.js"></script>
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function (event) {
+            event.preventDefault();  // Prevent form from reloading the page
+            setTimeout(function () {
+                alert("Thank you for your order! Our team will contact you soon.");
+            }, 1500);  // Show popup after 1.5 seconds
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function () {
+            const currentAnswer = this.nextElementSibling;
+            const currentIcon = this.querySelector('i');
+
+            // Close any other open answers and reset icons
+            faqQuestions.forEach(q => {
+                const answer = q.nextElementSibling;
+                const icon = q.querySelector('i');
+
+                if (answer !== currentAnswer) {
+                    answer.style.display = 'none';  // Close other answers
+                    icon.classList.remove('fa-minus');  // Reset icon to +
+                    icon.classList.add('fa-plus');
+                }
+            });
+
+            // Toggle the current answer's visibility and icon
+            if (currentAnswer.style.display === 'block') {
+                currentAnswer.style.display = 'none';
+                currentIcon.classList.remove('fa-minus');
+                currentIcon.classList.add('fa-plus');
+            } else {
+                currentAnswer.style.display = 'block';
+                currentIcon.classList.remove('fa-plus');
+                currentIcon.classList.add('fa-minus');
+            }
+        });
+    });
+});
+
+
+    </script>
+    <script src="content.js"></script>
+    <script src="counter.js"></script>
+
+    <script src="card.js"></script>
+</body>
+
+</html>
