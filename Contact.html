@@ -56,8 +56,8 @@
                         <ul class="submenu">
                             <li class="submenu-item"><a href="./Bacholers.html" class="submenu-link">Bacholers Courses</a></li>
                             <li class="submenu-item"><a href="./Masters.html" class="submenu-link">Masters Courses</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">Vocational Courses</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">Diploma Courses</a></li>
+                            <li class="submenu-item"><a href="./vocational_courses.html" class="submenu-link">Vocational Courses</a></li>
+                            <li class="submenu-item"><a href="./Diploma_courses.html" class="submenu-link">Diploma Courses</a></li>
                         </ul>
                     </li>
                     <li class="menu-item"><a href="./Our-progress.html" class="menu-link">Reviews</a></li>
@@ -93,47 +93,42 @@
           </div>
       </div>
       <div class="detail-right">
-        <form id="orderForm" action="/submit" method="POST">
-          <div id="f-1">
-              <input type="text" placeholder="Name" name="name" required>
-              <input type="email" placeholder="Email" name="email" required>
-          </div>
-          
-          <div id="f-2">
-              <input id="phone" type="tel" name="phone" placeholder="Phone Number" required>
-              <input id="university" type="text" name="university" placeholder="University Name" required>
-          </div>
-          
-          <div id="f-3">
-              <select id="subject" name="subject" required>
-                  <option value="" disabled selected>Select a Subject</option>
-                  <option value="accounting">Accounting</option>
-                  <option value="management">Management</option>
-                  <option value="marketing">Marketing</option>
-                  <option value="nursing">Nursing</option>
-                  <option value="computer-science">Computer Science</option>
-                  <option value="finance">Finance</option>
-                  <option value="economics">Economics</option>
-                  <option value="it-courses">IT Courses</option>
-                  <option value="law">Law</option>
-                  <option value="statistics">Statistics</option>
-                  <option value="engineering">Engineering</option>
-                  <option value="others-courses">Other Courses</option>
-              </select>
-          </div>
-          
-          <div id="f-3">
-              <input id="date" type="date" name="due_date" required>
-              <input id="wordCount" type="number" name="word_count" placeholder="Word Count" required>
-          </div>
-          
-          <div id="f-2">
-              <textarea id="text-ar" name="description" placeholder=" Description" rows="6" cols="50" required></textarea>
-          </div>
-      
-          <button type="submit" style="margin-top: 10px; padding: 12px 16px; background-color: white; color: #13334C; font-weight: 600; border-radius: 20px;">Submit</button>
-      </form>
-      </div>
+        <form id="orderForm" method="POST" onsubmit="event.preventDefault(); SendMail();">
+            <div id="f-1">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div id="f-2">
+                <input id="phone" type="tel" name="phone" placeholder="Phone Number" required>
+                <input id="university" type="text" name="university" placeholder="University Name" required>
+            </div>
+            <div id="f-3">
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a Subject</option>
+                    <option value="accounting">Accounting</option>
+                    <option value="management">Management</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="nursing">Nursing</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="finance">Finance</option>
+                    <option value="economics">Economics</option>
+                    <option value="it-courses">IT Courses</option>
+                    <option value="law">Law</option>
+                    <option value="statistics">Statistics</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="others-courses">Other Courses</option>
+                </select>
+            </div>
+            <div id="f-3">
+                <input id="date" type="date" name="due_date" required>
+                <input id="wordCount" type="number" name="word_count" placeholder="Word Count" required>
+            </div>
+            <div id="f-2">
+                <textarea id="text-ar" name="description" placeholder="Description" rows="6" cols="48" required></textarea>
+            </div>
+            <button type="submit" style="margin-top: 10px; padding: 12px 16px; background-color: white; color: #13334C; font-weight: 600; border-radius: 20px;">Submit</button>
+        </form>
+    </div>
     </section>
 
 
@@ -224,8 +219,11 @@
                       <a target="_blank" rel="noopener noreferrer" href="./Masters.html">Masters Tutoring</a>
                     </li>
                     <li class=" menu-item-type-post_type menu-item-object-page">
-                      <a href="#">Vocational and others Certificates</a>
+                      <a href="./vocational_courses.html">Vocational Courses</a>
                     </li>
+                    <li class=" menu-item-type-post_type menu-item-object-page">
+                        <a href="./Diploma_courses.html">Diploma Courses</a>
+                      </li>
                     <li class=" menu-item-type-post_type menu-item-object-page">
                       <a href="Our-progress.html">Reviews</a>
                     </li>
@@ -341,7 +339,8 @@
     </script>
     <script src="content.js"></script>
     <script src="counter.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="contact.js"></script>
     <script src="card.js"></script>
     
 </body>

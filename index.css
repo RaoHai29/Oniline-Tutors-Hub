@@ -156,7 +156,7 @@ a, button {
 }
 .menu-link:hover {
     outline: none;
-    color: var(--color-pink-500);
+    color: orange;
 }
 @media only screen and (min-width: 993px) {
     .menu-dropdown:hover > .submenu {

@@ -54,7 +54,7 @@
     padding: 10px;
     border-radius: 5px;
     border: 0;
-    width: 101.5%;
+    width: 100%;
     margin-bottom: 15px;
 }
 #f-3 input {
@@ -63,7 +63,7 @@
     border-radius: 5px;
     border: 0;
     margin-bottom: 15px;
-    width: 101.5%;
+    width: 100%;
 }
 .contact-details .detail-left h1{
     font-size: 48px;
@@ -81,6 +81,12 @@
 }
 .contact-details .detail-left .contact-info p strong{
     font-size: 18px;
+}
+@media (max-width: 1400px){
+
+    .detail-right form{
+        width: 80%;
+    }
 }
 @media (max-width: 1220px){
     .contact-details{

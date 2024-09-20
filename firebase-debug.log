@@ -1,1 +1,27 @@
 [debug] [2024-09-20T17:29:22.025Z] ----------------------------------------------------------------------
+[debug] [2024-09-20T17:29:22.031Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Home\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-20T17:29:22.032Z] CLI Version:   13.17.0
+[debug] [2024-09-20T17:29:22.033Z] Platform:      win32
+[debug] [2024-09-20T17:29:22.033Z] Node Version:  v20.16.0
+[debug] [2024-09-20T17:29:22.033Z] Time:          Fri Sep 20 2024 22:29:22 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-09-20T17:29:22.033Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-20T17:29:22.047Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-20T17:29:22.047Z] > authorizing via signed-in user (raohai216@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Home\Downloads\OnlineTutorsHub\public
+
+[debug] [2024-09-20T17:30:03.122Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Home\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:268:49)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[error] 
+[error] Error: An unexpected error has occurred.
