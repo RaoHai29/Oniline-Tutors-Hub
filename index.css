@@ -921,6 +921,7 @@ main .first-section .first-sect-left .offers ul{
         position: relative;
     }
   
+  
     .footer-wave-svg {
         height: 50px;
     }
@@ -1007,6 +1008,7 @@ main .first-section .first-sect-left .offers ul{
 }
 
   @media (max-width: 420px){
+
     main .first-section{
         flex-direction: column;
     }
@@ -1075,3 +1077,46 @@ main .first-section .first-sect-left .offers ul{
         width: 120px;
     }
   }
+  #code input{
+    padding: 10px;
+    border-radius: 5px;
+     border: 0;
+     
+  }
+  #countrycode{
+    width: 11%;
+
+  }
+  #phone{
+    width: 33%;
+  }
+  #subject{
+    margin-top: 18px;
+  }
+  @media (max-width:820px) {
+     #countrycode{
+        width: 18%;
+      }
+      #phone{
+        width: 80%;
+        margin-bottom: 15px;
+      }
+      #university{
+        width: 100%;
+      }
+      #f-2{
+        padding-bottom: 5px;
+      }
+  }
+  @media (max-width:420px) {
+    #countrycode{
+       width: 15%;
+     }
+     #phone{
+       width: 77%;
+     }
+     #f-1{
+        padding-bottom: 5px;
+     }
+ }
+ 

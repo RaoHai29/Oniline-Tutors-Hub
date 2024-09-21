@@ -111,6 +111,12 @@
 }
 
 @media (max-width: 420px){
+    #countrycode {
+        width: 20%;
+    }
+    #f-2 {
+        padding-bottom: 0;
+    }
     .contact-details{
         flex-direction: column;
         height: auto;
@@ -139,3 +145,18 @@
         font-size: 53px;
     }
 }
+
+#countrycode {
+    width: 15%;
+}
+#phone{
+    width: 80%;
+    margin-bottom: 15px;
+}
+#university{
+    width: 100%;
+    padding-bottom: 5px;
+}
+#f-2{
+    padding-bottom: 1px;
+  }

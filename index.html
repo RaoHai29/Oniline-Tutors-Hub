@@ -130,8 +130,11 @@
                             <input type="text" placeholder="Name" name="name" required>
                             <input type="email" placeholder="Email" name="email" required>
                         </div>
+                        <div id="code">
+                            <input id="countrycode" type="number" placeholder="92" name="countrycode" required>
+                            <input id="phone" type="tel" placeholder="0321-1234567" name="phone" required>
+                        </div>
                         <div id="f-2">
-                            <input id="phone" type="tel" name="phone" required>
                             <select id="subject" name="subject" required>
                                 <option value="" disabled selected>Select a Subject</option>
                                 <option value="accounting">Accounting</option>
@@ -521,8 +524,7 @@
 
 
     <script src="nav.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="numbercode.js"></script>
+   
     <script>
         document.getElementById('orderForm').addEventListener('submit', function (event) {
             event.preventDefault();  // Prevent form from reloading the page
