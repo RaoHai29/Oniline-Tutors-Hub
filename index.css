@@ -545,7 +545,7 @@ main .first-section .first-sect-left .offers ul{
   }
   .card-details .cards .cards-d{
     width: 290px;
-    height: 380px;
+    height: 440px;
     background: white;
     margin-top: 15px;
     border-radius: 20px;
@@ -567,6 +567,8 @@ main .first-section .first-sect-left .offers ul{
     font-style: normal;
     color: #13334D;
     text-align: start;
+    font-size: 14px;
+    text-align: justify;
   }
   .card-details .cards .cards-d center{
     margin-top: 5px;
@@ -1119,4 +1121,83 @@ main .first-section .first-sect-left .offers ul{
         padding-bottom: 5px;
      }
  }
- 
+ .asign-des{
+    width: 100%;
+    padding: 40px 140px;
+ }
+
+ .asign-des h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #13334D;
+    text-align: center;
+  }
+  .asign-des h2{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #13334D;
+  }
+  .asign-des p {
+    text-align: justify;
+  }
+  .hidden-content {
+    display: none;
+  }
+  .button-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #13334D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .btn:hover {
+    background-color: #13334D;
+  }
+  @media (max-width: 768px) {
+    .asign-des{
+        padding: 40px 18px;
+    }
+  
+  }
+
+  .mark{
+    width: 100%;
+   padding: 40px 140px;
+    background-color:#123049
+  }
+  .mark h1{
+    font-size: 20px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .logo-container img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain; /* Makes sure the logos fit well */
+    margin: 0 20px; /* Adds space between logos */
+  }
+
+  marquee {
+    padding: 10px 0;
+  }
+  @media (max-width: 768px) {
+    
+    .mark{
+        padding: 40px 20px;
+    }
+  }
